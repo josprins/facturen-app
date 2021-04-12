@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/facturen-app/static/css/main.604ed7d4.chunk.css",
+    "main.js": "/facturen-app/static/js/main.e8aaf93b.chunk.js",
+    "main.js.map": "/facturen-app/static/js/main.e8aaf93b.chunk.js.map",
+    "runtime-main.js": "/facturen-app/static/js/runtime-main.f8645eb3.js",
+    "runtime-main.js.map": "/facturen-app/static/js/runtime-main.f8645eb3.js.map",
+    "static/js/2.47ed8723.chunk.js": "/facturen-app/static/js/2.47ed8723.chunk.js",
+    "static/js/2.47ed8723.chunk.js.map": "/facturen-app/static/js/2.47ed8723.chunk.js.map",
+    "index.html": "/facturen-app/index.html",
+    "static/css/main.604ed7d4.chunk.css.map": "/facturen-app/static/css/main.604ed7d4.chunk.css.map",
+    "static/js/2.47ed8723.chunk.js.LICENSE.txt": "/facturen-app/static/js/2.47ed8723.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow-down.a6ed7bff.svg": "/facturen-app/static/media/icon-arrow-down.a6ed7bff.svg",
+    "static/media/icon-moon.7101c57d.svg": "/facturen-app/static/media/icon-moon.7101c57d.svg",
+    "static/media/icon-plus.278c048a.svg": "/facturen-app/static/media/icon-plus.278c048a.svg",
+    "static/media/logo.e8c9e71e.svg": "/facturen-app/static/media/logo.e8c9e71e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8645eb3.js",
+    "static/js/2.47ed8723.chunk.js",
+    "static/css/main.604ed7d4.chunk.css",
+    "static/js/main.e8aaf93b.chunk.js"
+  ]
+}
