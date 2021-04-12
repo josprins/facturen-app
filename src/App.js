@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import InfoSection from './components/sections/InfoSection';
+import ActionSection from './components/sections/ActionSection';
+import InvoiceContainer from './components/sections/InvoiceContainer';
+import CreateInvoice from './components/sections/CreateInvoice';
 
-function App() {
+const App = () => {
+  const [smallDevice, setSmallDevice] = useState(Boolean);
+
+  const GetSmallDevice = size => {
+    function handleResize() {
+      if (window.innerWidth <= size) setSmallDevice(true);
+      else setSmallDevice(false);
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  };
+
+  const handleSelectMenu = e => {
+    e.preventDefault();
+    const element = document.getElementById('status').style;
+    const arrow = document.getElementById('arrow').style;
+    if (element.display === '') {
+      element.display = 'block';
+      arrow.transform = 'rotate(180deg)';
+    } else {
+      element.display = '';
+      arrow.transform = 'none';
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <InfoSection />
+      <div className='facturen-container'>
+        <ActionSection
+          smallDevice={smallDevice}
+          getSmallDevice={GetSmallDevice}
+          handleSelectMenu={handleSelectMenu}
+        />
+        <InvoiceContainer
+          smallDevice={smallDevice}
+          getSmallDevice={GetSmallDevice}
+        />
+        <CreateInvoice />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
